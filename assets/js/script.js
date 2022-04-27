@@ -257,12 +257,15 @@ $("#trash").droppable({
   drop: function(event, ui) {
     console.log("drop");
     ui.draggable.remove();
+    $("bottom-trash").addClass("bottom-trash-active")
   },
   over: function(event, ui) {
     console.log("over");
+    $("bottom-trash").addClass("bottom-trash-active");
   },
   out: function(event, ui) {
     console.log("out");
+    $("bottom-trash").addClass("bottom-trash-active")
   }
 });
 
